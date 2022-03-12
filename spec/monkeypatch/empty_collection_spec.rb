@@ -5,14 +5,6 @@ describe "DescriptiveStatistics" do
 
   subject { [] }
 
-  context "when subject is nil" do
-    subject { nil }
-
-    it "calculates the sum" do
-      expect(subject.sum).to eql(0)
-    end
-  end
-
   context "with a default of nil" do
 
     before do
