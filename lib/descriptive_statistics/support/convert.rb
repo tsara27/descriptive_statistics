@@ -33,6 +33,8 @@ module DescriptiveStatistics
         enumerable.values.each
       when Set
         enumerable.to_a.each
+      when NilClass
+        [].each
       else
         enumerable.each
       end
