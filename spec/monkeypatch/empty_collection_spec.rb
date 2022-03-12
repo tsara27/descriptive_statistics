@@ -5,6 +5,14 @@ describe "DescriptiveStatistics" do
 
   subject { [] }
 
+  context "when subject is nil" do
+    subject { nil }
+
+    it "calculates the sum" do
+      expect(subject.sum).to eql(0)
+    end
+  end
+
   context "with a default of nil" do
 
     before do
@@ -16,7 +24,7 @@ describe "DescriptiveStatistics" do
     end
 
     it "calculates the sum" do
-      expect(subject.sum).to eql(nil)
+      expect(subject.sum).to eql(0)
     end
 
     it "calculates the mean" do
@@ -74,7 +82,7 @@ describe "DescriptiveStatistics" do
     end
 
     it "calculates the sum" do
-      expect(subject.sum).to eql(0.0)
+      expect(subject.sum).to eql(0)
     end
 
     it "calculates the mean" do
@@ -129,7 +137,7 @@ describe "DescriptiveStatistics" do
     end
 
     it "calculates the sum" do
-      expect(subject.sum).to eql(0.0)
+      expect(subject.sum).to eql(0)
     end
 
     it "calculates the mean" do
@@ -184,7 +192,7 @@ describe "DescriptiveStatistics" do
     end
 
     it "calculates the sum" do
-      expect(subject.sum).to eql(nil)
+      expect(subject.sum).to eql(0)
     end
 
     it "calculates the mean" do

@@ -8,5 +8,8 @@ Gem::Specification.new do |s|
   s.email       = 'derrick.parkhurst@gmail.com'
   s.files       = Dir['lib/**/**/*']
   s.license     = "MIT"
+
+  # Requirements
+  s.required_ruby_version = '~> 2.7'
 end
 

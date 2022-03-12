@@ -1,8 +1,7 @@
 require 'monkeypatch/spec_helper'
+require 'descriptive_statistics'
 
 describe "DescriptiveStatistics" do
-  require 'descriptive_statistics'
-
   subject { [2,6,9,3,5,1,8,3,6,9,2] }
 
   context "with an array" do
@@ -18,7 +17,7 @@ describe "DescriptiveStatistics" do
     end
 
     it "calculates the sum" do
-      expect(subject.sum).to eql(54.0)
+      expect(subject.sum).to eql(54)
     end
 
     it "calculates the mean" do
