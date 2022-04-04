@@ -10,6 +10,6 @@ Gem::Specification.new do |s|
   s.license     = "MIT"
 
   # Requirements
-  s.required_ruby_version = '~> 2.7'
+  s.required_ruby_version = '>= 2.7.5'
 end
 
